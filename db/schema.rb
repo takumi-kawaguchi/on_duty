@@ -10,7 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180424174505) do
+ActiveRecord::Schema.define(version: 20180424175050) do
+
+  create_table "answers", force: :cascade do |t|
+    t.text "content"
+    t.integer "report_id"
+    t.integer "question_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["question_id"], name: "index_answers_on_question_id"
+    t.index ["report_id"], name: "index_answers_on_report_id"
+  end
+
+  create_table "comments", force: :cascade do |t|
+    t.integer "report_id"
+    t.text "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["report_id"], name: "index_comments_on_report_id"
+  end
 
   create_table "formats", force: :cascade do |t|
     t.string "title"
