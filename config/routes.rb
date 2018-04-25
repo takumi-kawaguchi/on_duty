@@ -1,19 +1,10 @@
 Rails.application.routes.draw do
-  get 'formats/index'
+  root 'home#my_page'
+  get 'home/setting'
 
-  get 'formats/show'
+  resources :formats
 
-  get 'formats/new'
-
-  get 'formats/create'
-
-  get 'formats/edit'
-
-  get 'formats/update'
-
-  get 'formats/destroy'
-
-  root 'pages#index'
+  # root 'pages#index'
   get 'pages/show'
   # devise_for :users
   devise_for :users, controllers: {

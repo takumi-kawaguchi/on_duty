@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180424175050) do
+ActiveRecord::Schema.define(version: 20180425144737) do
 
   create_table "answers", force: :cascade do |t|
     t.text "content"
@@ -52,6 +52,7 @@ ActiveRecord::Schema.define(version: 20180424175050) do
     t.integer "format_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.date "report_date"
     t.index ["format_id"], name: "index_reports_on_format_id"
     t.index ["user_id"], name: "index_reports_on_user_id"
   end
