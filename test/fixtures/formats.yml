@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  user: one
+  id: 1
+  title: 4月2日の最新版
+  user_id: 1
 
 two:
-  title: MyString
-  user: two
+  id: 2
+  title: 4月20日の修正版
+  user_id: 1

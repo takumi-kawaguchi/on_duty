@@ -1,11 +1,49 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  content: MyText
-  report: one
-  question: one
+  id: 1
+  content: excelを使えるようになる
+  report_id: 1
+  question_id: 1
 
 two:
-  content: MyText
-  report: two
-  question: two
+  id: 2
+  content: 完璧にexcelを使えるようになった！
+  report_id: 1
+  question_id: 2
+
+three:
+  id: 3
+  content: いい感じに楽しく！
+  report_id: 2
+  question_id: 1
+
+four:
+  id: 4
+  content: 達成完璧にできたぜ！
+  report_id: 2
+  question_id: 2
+
+five:
+  id: 5
+  content: 特になし
+  report_id: 3
+  question_id: 3
+
+six:
+  id: 6
+  content: wordがわかりませーん
+  report_id: 3
+  question_id: 4
+
+seven:
+  id: 7
+  content: チーム開発の重要性を学ぶ
+  report_id: 4
+  question_id: 3
+
+eight:
+  id: 8
+  content: チーム開発の難しさに気づいた
+  report_id: 4
+  question_id: 4

@@ -1,9 +1,21 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  report: one
-  content: MyText
+  id: 1
+  report_id: 1
+  content: excelできるようになったんだ、すごいね！
 
 two:
-  report: two
-  content: MyText
+  id: 2
+  report_id: 2
+  content: 真面目に書けよ、しばくぞ
+
+three:
+  id: 3
+  report_id: 3
+  content: 社会をなめるなよ若造
+
+four:
+  id: 4
+  report_id: 4
+  content: エンジニアサイコー！だね！
